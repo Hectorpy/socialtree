@@ -26,6 +26,10 @@ function App() {
     };
   }, []);
 
+  const handleClick = () => {
+    window.location.href = 'https://www.google.com'; // Adicione aqui o link desejado
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -49,7 +53,7 @@ function App() {
           VAGAS LIMITADAS!
         </p>
 
-        <button>
+        <button onClick={handleClick}>
           GARANTA AQUI A SUA VAGA
           <img src={wpp} alt="Icone" style={{ marginLeft: '10px', position: 'relative', top: '-3px'}} /> {/* Adicione o caminho correto do ícone */}
         </button>
