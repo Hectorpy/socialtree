@@ -37,7 +37,7 @@ function App() {
         </div>
 
         <div className="New-image-container" style={{ position: 'absolute', right: -35}}>
-          <img src={newImage2} className="New-image" alt="new image" />
+          <img src={newImage2} className="New-image2" alt="new image" />
         </div>
 
         <h1>

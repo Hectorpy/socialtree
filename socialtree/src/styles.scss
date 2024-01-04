@@ -1,3 +1,5 @@
+$mobile: 480px;
+
 .App-logo {
     border-radius: 50%;
     overflow: hidden;
@@ -66,4 +68,63 @@ p {
     display: flex;
     position: relative;
     top: -24px;
+}
+
+.New-image-container {
+    position: absolute;
+    top: 50%; // Centraliza verticalmente
+    transform: translateY(-50%); // Centraliza verticalmente
+
+    @media (max-width: $mobile) {
+        top: 550px;
+        transform: none;
+        
+    }
+}
+
+.New-image-container:first-child {
+    left: 0;
+
+    @media (max-width: $mobile) {
+        margin-right: auto;
+    }
+}
+
+.New-image-container:last-child {
+    right: 0;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+.New-image2{
+   @media (max-width: $mobile) {
+        display: none;
+   }
+}
+
+// Use media queries para estilos específicos de dispositivos móveis
+@media (max-width: $mobile) {
+  .App-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .App-header {
+    padding: 20px;
+    overflow-y: hidden;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
