@@ -3,6 +3,7 @@ import logo from './image0.jpeg';
 import newImage from './charadaprin.png'; // Adicione o caminho correto da nova imagem
 import newImage2 from './charadaprin.png';
 import './styles.scss';
+import wpp from './whatsapp.png';
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -36,7 +37,7 @@ function App() {
           <img src={newImage} className="New-image" alt="new image" />
         </div>
 
-        <div className="New-image-container" style={{ position: 'absolute', right: -35}}>
+        <div className="New-image-container" style={{ position: 'absolute', right: -35 }}>
           <img src={newImage2} className="New-image2" alt="new image" />
         </div>
 
@@ -50,6 +51,7 @@ function App() {
 
         <button>
           GARANTA AQUI A SUA VAGA
+          <img src={wpp} alt="Icone" style={{ marginLeft: '10px', position: 'relative', top: '-3px'}} /> {/* Adicione o caminho correto do ícone */}
         </button>
       </header>
     </div>
